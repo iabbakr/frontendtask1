@@ -4,20 +4,57 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const page = (
-  <div className="">
-    <div className>
-      <h1>
-        Fun facts about React:
-      </h1>
-      <ul>
-        <li>hello</li>
-        <li>suwaidah</li>
-        <li>abubakar</li>
-        <li>ibrahim</li>
-      </ul>
+function Profile(){
+  return(
+    <div className="profile section">
+      <img src="./images/AbubakarIbrahim.jpg" alt="" id="profile__img" />
+      <p id="twitter">elitehubngr</p>
+      <p className="slack">iabbakr</p>
     </div>
-  </div>
+  )
+}
+function Link(){
+  return(
+    <div className="links section">
+      <button id="btn__zuri">
+        <a href="https://training.zuri.team/" target="_blank">
+        Twitter Link
+        </a>
+      </button>
+      <button id="books">
+        <a href="http://books.zuri.team" target="_blank">
+        Zuri Team
+        </a>
+      </button>
+      <button id="book__python">
+        <a href="https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>" target="_blank">
+        Zuri Books
+        </a>
+      </button>
+      <button id="pitch">
+        <a href="https://background.zuri.team" target="_blank">
+        Python Books
+        </a>
+      </button>
+      <button id="book__design">
+        <a href="https://books.zuri.team/design-rules" target="_blank">
+        Background Check for Coders
+        </a>
+      </button>
+
+    </div>
+  )
+
+}
+
+const page = (
+
+    <div>  
+      <Profile />
+      <Link />
+    </div>
+  
+      
 )
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
